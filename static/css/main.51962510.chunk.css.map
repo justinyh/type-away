@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.scss"],"names":[],"mappings":"AAAA,KACI,QACY,CAIf,gBAEG,WAAY,CACf,SAGG,cAAe","file":"main.51962510.chunk.css","sourcesContent":["body {\n    margin: 0;\n    height: 100%;\n}\nhtml {\n    height: 100%;\n}\n#root {\n    height: 100%;\n}\n\n#loading {\n    position: fixed;\n}"]}
