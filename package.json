@@ -14,10 +14,10 @@
     "socket.io-client": "^2.3.0"
   },
   "scripts": {
-    "predeploy": "cd src/client && npm run build",
+    "predeploy": "npm run build --prefix src/client",
     "deploy": "gh-pages -d src/client/build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run start --prefix src/client",
+    "build": "npm run build --prefix src/client",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
