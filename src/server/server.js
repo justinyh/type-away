@@ -18,7 +18,12 @@ app.use((req, res, next) => {
   const server = http.Server(app);
   const io = socketIo(server);
   
-  const port = '3030';
+  const arguments = process.argv.slice(2);
+  const port = parseInt(arguments[0]);
+
+  if (!port || port < 0 || port > 65535) {
+    throw new Error(`${arguments[0]} is not a valid port number.`);
+  }
   
   server.listen(port, () => {
     console.log('listening on ', port);
