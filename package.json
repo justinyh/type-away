@@ -16,10 +16,6 @@
   "scripts": {
     "predeploy": "npm run build --prefix src/client",
     "deploy": "gh-pages -d src/client/build",
-    "start": "npm run start --prefix src/client",
-    "build": "npm run build --prefix src/client",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
