@@ -15,7 +15,7 @@
   },
   "scripts": {
     "predeploy": "npm run build --prefix src/client",
-    "deploy": "gh-pages -d src/client/build",
+    "deploy": "gh-pages -d src/client/build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,5 +34,8 @@
   },
   "devDependencies": {
     "gh-pages": "^3.1.0"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }
